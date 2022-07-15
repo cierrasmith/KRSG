@@ -3,6 +3,36 @@ body {
     color: white
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
 h1 {
     text-align: center;
+    font-family: "Impact", sans-serif;
+    font-size: 3em;
+}
+
+#url {
+    text-align: center;
+    color: goldenrod;
+    font-size: 3em;
+}
+
+#mission > h1 {
+    background-color: #2f2f2f;
+
+}
+
+#vision > h1 {
+    background-color: goldenrod;
+    color: black;
+}
+
+#cc_listing {
+    background-color: darkgrey;
+    color: black;
 }
