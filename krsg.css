@@ -1,6 +1,13 @@
+main {
+    padding: .5em;
+}
+
 body {
     background-color: black;
-    color: white
+    color: white;
+    font-family: "Georgia", sans-serif;
+    font-size: 1.2em;
+    padding: .5em;
 }
 
 img {
@@ -46,17 +53,41 @@ a:hover {
     color: black;
 }
 
+#vision > img {
+    width: 100%;
+}
+
 #cc_listing {
     background-color: darkgrey;
     color: black;
+    padding: 0.5em;
 }
 
 .flex-container {
     display: flex;
-    background-color: black;
     color: goldenrod;
     justify-content: space-evenly;
-    font-family: "Verdana", sans-serif;
-    font-size: 1.5em;
+}
+
+.flex-item {
+    background-color: black;
+    border: 7px solid darkgrey;
+    font-family: "Copperplate", sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
     text-align: center;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    height: 5%;
+    padding-bottom: 0.5%;
 }
