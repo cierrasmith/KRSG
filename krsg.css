@@ -1,5 +1,6 @@
 main {
     padding: .5em;
+
 }
 
 body {
@@ -8,6 +9,32 @@ body {
     font-family: "Georgia", sans-serif;
     font-size: 1.2em;
     padding: .5em;
+}
+
+nav {
+    background-color: darkgrey;
+    overflow: hidden;
+    color: black;
+}
+
+nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav a.active {
+    background-color: goldenrod;
+    color: black;
 }
 
 img {
@@ -117,3 +144,10 @@ footer {
     height: 5%;
     padding-bottom: 0.5%;
 }
+
+
+
+
+
+
+
