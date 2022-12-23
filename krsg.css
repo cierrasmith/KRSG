@@ -177,6 +177,11 @@
  }
 
  @media screen and (max-width: 768px) {
+
+     main {
+         padding: 0;
+     }
+
      .topnav a:not(:first-child) {display: none;}
      .topnav a.icon {
          float: right;
@@ -212,6 +217,10 @@
 
      h1 {
          font-size: 2rem;
+     }
+
+     td:nth-child(2) {
+         padding-left: 2em;
      }
 
      .flex-container {
