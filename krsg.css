@@ -11,32 +11,6 @@
         padding: .5em;
     }
 
-    /*nav {*/
-    /*    background-color: darkgrey;*/
-    /*    overflow: hidden;*/
-    /*    color: black;*/
-    /*}*/
-
-    /*nav a {*/
-    /*    float: left;*/
-    /*    color: black;*/
-    /*    text-align: center;*/
-    /*    padding: 0.6em 0.6em;*/
-    /*    text-decoration: none;*/
-
-    /*}*/
-
-
-    /*nav a:hover {*/
-    /*    background-color: white;*/
-    /*    color: black;*/
-    /*}*/
-
-    /*nav a.active {*/
-    /*    background-color: goldenrod;*/
-    /*    color: black;*/
-    /*}*/
-
     img {
         display: block;
         margin-left: auto;
@@ -117,13 +91,10 @@
 
     .flex-item {
         background-color: black;
-        border: 0.5em solid darkgrey;
+        border-inline: 0.2em solid darkgrey;
         font-family: "Copperplate", sans-serif;
-        font-size: 1.5em;
-        font-weight: lighter;
         text-align: center;
-        padding: .5em;
-        /*margin: 10px;*/
+        padding: .3em;
     }
 
     #certs > img {
@@ -177,7 +148,6 @@
  }
 
  @media screen and (max-width: 768px) {
-
      main {
          padding: 0;
      }
@@ -216,7 +186,11 @@
      }
 
      h1 {
-         font-size: 2rem;
+         font-size: 2em;
+     }
+
+     h2 {
+         font-size: 1.5em;
      }
 
      td:nth-child(2) {
@@ -232,11 +206,18 @@
 
      .flex-item {
          flex: 50%;
+         border: 0.5em solid darkgrey;
+         border-left: 3em solid darkgrey;
+         border-right: 3em solid darkgrey;
      }
 
      footer {
          position: fixed;
-         height: 11%;
+         height: 7%;
+     }
+
+     footer > p {
+         font-size: 0.8em;
      }
  }
 
