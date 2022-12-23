@@ -11,31 +11,31 @@
         padding: .5em;
     }
 
-    nav {
-        background-color: darkgrey;
-        overflow: hidden;
-        color: black;
-    }
+    /*nav {*/
+    /*    background-color: darkgrey;*/
+    /*    overflow: hidden;*/
+    /*    color: black;*/
+    /*}*/
 
-    nav a {
-        float: left;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 18px;
-    }
+    /*nav a {*/
+    /*    float: left;*/
+    /*    color: black;*/
+    /*    text-align: center;*/
+    /*    padding: 0.6em 0.6em;*/
+    /*    text-decoration: none;*/
+
+    /*}*/
 
 
-    nav a:hover {
-        background-color: white;
-        color: black;
-    }
+    /*nav a:hover {*/
+    /*    background-color: white;*/
+    /*    color: black;*/
+    /*}*/
 
-    nav a.active {
-        background-color: goldenrod;
-        color: black;
-    }
+    /*nav a.active {*/
+    /*    background-color: goldenrod;*/
+    /*    color: black;*/
+    /*}*/
 
     img {
         display: block;
@@ -50,33 +50,20 @@
 
     h1 {
         text-align: center;
+        background-color: goldenrod;
+        color: black;
         font-family: "Impact", sans-serif;
         font-size: 3em;
         height: 5%;
     }
 
-    /* Container holding the image and the text */
-    .container > #mission {
-        position: relative;
-        color: black;
-        font-size: 1.5em;
-    }
-
-    .container {
-        /*background-color: #2f2f2f;*/
-    }
-
-    .container > h1 {
-        background-color: goldenrod;
-        color: black;
-    }
-
-    /* Top left text */
-    .mission-text {
-        position: absolute;
-        top: 4px;
-        left: 16px;
-    }
+ h2 {
+     text-align: center;
+     color: black;
+     font-family: "Impact", sans-serif;
+     font-size: 2.5em;
+     height: 5%;
+ }
 
     #address {
         font-family: "Georgia", sans-serif;
@@ -101,10 +88,6 @@
         background-color: #2f2f2f;
     }
 
-    #vision > h1 {
-        background-color: goldenrod;
-        color: black;
-    }
 
     #vision > img {
         width: 100%;
@@ -113,8 +96,18 @@
     #cc_listing {
         background-color: darkgrey;
         color: black;
-        padding: 0.5em;
+        padding: 0.4em;
     }
+
+    #cc_listing > h1 {
+        background-color: darkgrey;
+    }
+
+
+    td:nth-child(2) {
+     padding-left: 8em;
+    }
+
 
     .flex-container {
         display: flex;
@@ -124,12 +117,13 @@
 
     .flex-item {
         background-color: black;
-        border: 7px solid darkgrey;
+        border: 0.5em solid darkgrey;
         font-family: "Copperplate", sans-serif;
-        font-size: 1.7em;
+        font-size: 1.5em;
         font-weight: lighter;
         text-align: center;
-
+        padding: .5em;
+        /*margin: 10px;*/
     }
 
     #certs > img {
@@ -151,62 +145,92 @@
 
 
 
+ .topnav {
+     overflow: hidden;
+     background-color: #333;
+ }
 
-@media screen and (max-width: 768px) {
+ .topnav a {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 0.5em 1em;
+     text-decoration: none;
+     font-size: 1em;
+ }
 
-    #url {
-        font-size: 2rem;
-    }
+ .topnav a:hover {
+     background-color: #ddd;
+     color: black;
+     padding: 0.5em 1em 0.8em;
+ }
 
-    img {
-        max-width: 100%;
-    }
+ .topnav a.active {
+     background-color: goldenrod;
+     color: black;
+     padding: 0.5em 1em 0.8em;
+ }
 
-    p {
-        font-size: 1rem;
-    }
+ .topnav .icon {
+     display: none;
+ }
 
-    h1 {
-        font-size: 2rem;
-    }
+ @media screen and (max-width: 768px) {
+     .topnav a:not(:first-child) {display: none;}
+     .topnav a.icon {
+         float: right;
+         display: block;
+         padding: 0.5em 1em;
+     }
+ }
 
-    .container > #mission {
-        position: relative;
-        color: black;
-        font-size: 1.5em;
-    }
+ @media screen and (max-width: 768px) {
+     .topnav.responsive {position: relative;}
+     .topnav.responsive .icon {
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+     .topnav.responsive a {
+         float: none;
+         display: block;
+         text-align: left;
+     }
 
-    .container {
-        /*background-color: #2f2f2f;*/
-    }
+     #url {
+         font-size: 2rem;
+     }
 
-    .container > h1 {
-        background-color: goldenrod;
-        color: black;
-    }
+     img {
+         max-width: 100%;
+     }
 
-    .mission-text {
-        position: absolute;
-        top: 4px;
-        left: 16px;
-    }
+     p {
+         font-size: 1rem;
+     }
 
-    .container > h1 {
-        background-color: goldenrod;
-        color: black;
-    }
+     h1 {
+         font-size: 2rem;
+     }
 
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%
-    }
+     .flex-container {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         width: 100%
+     }
 
-    .flex-item {
-        flex: 50%;
-    }
-}
+     .flex-item {
+         flex: 50%;
+     }
+
+     footer {
+         position: fixed;
+         height: 11%;
+     }
+ }
+
 
 
 
